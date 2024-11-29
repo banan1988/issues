@@ -1,0 +1,580 @@
+[0m[1mmodule.azuread-remove-password["4"].azuread_application.application: Refreshing state... [id=/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902][0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application.application: Refreshing state... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf][0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application.application: Refreshing state... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd][0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application.application: Refreshing state... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b][0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_identifier_uri.application_client_id: Refreshing state... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf/identifierUris/YXBpOi8vMmE1YzdlYjQtYmE5Mi00Yjk0LWEzZjQtOWFjNDAwMTY0MTZj][0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id: Refreshing state... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/identifierUris/YXBpOi8vNWY4NTBhMTktM2IxMS00YmY1LTllZWMtNzNjYWQ3OGIzNjhi][0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_application_identifier_uri.application_client_id: Refreshing state... [id=/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902/identifierUris/YXBpOi8vNzAxYWNlOTctMmRmZS00ZTEwLTk3MTQtODI1NzY2MjFiN2E4][0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_identifier_uri.application_client_id: Refreshing state... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/identifierUris/YXBpOi8vMzkwYmQ1MWQtYzhmNy00ZjRiLWI1ZjktMGU2ZTcwMGM3Y2Fm][0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_password.application_password: Refreshing state... [id=6b4118e3-dceb-44b7-a952-f6aaba92e3bf/password/7dcf0c91-e90d-47b1-be96-c2ee705fe367][0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_service_principal.service_principal: Refreshing state... [id=/servicePrincipals/4057dd16-19ed-46d9-aea7-20f4250b560c][0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_service_principal.service_principal: Refreshing state... [id=/servicePrincipals/596b58b7-55d0-4252-b616-da5ff79b4fe9][0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_service_principal.service_principal: Refreshing state... [id=/servicePrincipals/5ccf5dbd-05d2-48ed-93d5-14049292aede][0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_service_principal.service_principal: Refreshing state... [id=/servicePrincipals/0ff6ec2d-ee55-44fc-b0d7-5433b5310a04][0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_password.application_password: Refreshing state... [id=8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/password/c276def6-5a0e-485c-82ed-57c18828f131][0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_application_password.application_password: Refreshing state... [id=4bbad115-6561-44e9-a2c6-ff6b23ee9902/password/93bc9615-11ea-4dfc-868f-8da81644e3f9][0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_password.application_password: Refreshing state... [id=1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/password/504ba32d-4b32-4945-95a7-d2a12399027a][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.azuread-remove-password["1"].azuread_application.application[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application" "application" {
+      [31m-[0m[0m app_role_ids                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m client_id                      = "5f850a19-3b11-4bf5-9eec-73cad78b368b" [90m-> null[0m[0m
+      [31m-[0m[0m device_only_auth_enabled       = false [90m-> null[0m[0m
+      [31m-[0m[0m display_name                   = "sp-1" [90m-> null[0m[0m
+      [31m-[0m[0m fallback_public_client_enabled = false [90m-> null[0m[0m
+      [31m-[0m[0m group_membership_claims        = [] [90m-> null[0m[0m
+      [31m-[0m[0m id                             = "/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uris                = [
+          [31m-[0m[0m "api://5f850a19-3b11-4bf5-9eec-73cad78b368b",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids    = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_post_response_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m object_id                      = "8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd" [90m-> null[0m[0m
+      [31m-[0m[0m owners                         = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m prevent_duplicate_names        = false [90m-> null[0m[0m
+      [31m-[0m[0m publisher_domain               = "TomTomInternational.onmicrosoft.com" [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience               = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                           = [] [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m api {
+          [31m-[0m[0m known_client_applications      = [] [90m-> null[0m[0m
+          [31m-[0m[0m mapped_claims_enabled          = false [90m-> null[0m[0m
+          [31m-[0m[0m requested_access_token_version = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m optional_claims {
+        }
+
+      [31m-[0m[0m public_client {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m single_page_application {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m web {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m implicit_grant {
+              [31m-[0m[0m access_token_issuance_enabled = false [90m-> null[0m[0m
+              [31m-[0m[0m id_token_issuance_enabled     = false [90m-> null[0m[0m
+            }
+        }
+    }
+
+[1m  # module.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_identifier_uri" "application_client_id" {
+      [31m-[0m[0m application_id = "/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/identifierUris/YXBpOi8vNWY4NTBhMTktM2IxMS00YmY1LTllZWMtNzNjYWQ3OGIzNjhi" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uri = "api://5f850a19-3b11-4bf5-9eec-73cad78b368b" [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["1"].azuread_application_password.application_password[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_password" "application_password" {
+      [31m-[0m[0m application_id = "/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd" [90m-> null[0m[0m
+      [31m-[0m[0m display_name   = "remove-me" [90m-> null[0m[0m
+      [31m-[0m[0m end_date       = "2026-11-29T20:16:07.7900994Z" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/password/c276def6-5a0e-485c-82ed-57c18828f131" [90m-> null[0m[0m
+      [31m-[0m[0m key_id         = "c276def6-5a0e-485c-82ed-57c18828f131" [90m-> null[0m[0m
+      [31m-[0m[0m start_date     = "2024-11-29T20:16:07.7900994Z" [90m-> null[0m[0m
+      [31m-[0m[0m value          = (sensitive value) [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["1"].azuread_service_principal.service_principal[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_service_principal" "service_principal" {
+      [31m-[0m[0m account_enabled               = true [90m-> null[0m[0m
+      [31m-[0m[0m alternative_names             = [] [90m-> null[0m[0m
+      [31m-[0m[0m app_role_assignment_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m app_role_ids                  = {} [90m-> null[0m[0m
+      [31m-[0m[0m app_roles                     = [] [90m-> null[0m[0m
+      [31m-[0m[0m application_tenant_id         = "2c5da40f-18fe-46b2-80be-9f7bf1ac5fb6" [90m-> null[0m[0m
+      [31m-[0m[0m client_id                     = "5f850a19-3b11-4bf5-9eec-73cad78b368b" [90m-> null[0m[0m
+      [31m-[0m[0m display_name                  = "sp-1" [90m-> null[0m[0m
+      [31m-[0m[0m id                            = "/servicePrincipals/0ff6ec2d-ee55-44fc-b0d7-5433b5310a04" [90m-> null[0m[0m
+      [31m-[0m[0m notification_email_addresses  = [] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids   = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scopes      = [] [90m-> null[0m[0m
+      [31m-[0m[0m object_id                     = "0ff6ec2d-ee55-44fc-b0d7-5433b5310a04" [90m-> null[0m[0m
+      [31m-[0m[0m owners                        = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m redirect_uris                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m service_principal_names       = [
+          [31m-[0m[0m "api://5f850a19-3b11-4bf5-9eec-73cad78b368b",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience              = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                          = [
+          [31m-[0m[0m "HideApp",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m type                          = "Application" [90m-> null[0m[0m
+        [90m# (7 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = true [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m features {
+          [31m-[0m[0m custom_single_sign_on_app = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise_application    = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery_application       = false [90m-> null[0m[0m
+          [31m-[0m[0m visible_to_users          = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m saml_single_sign_on {
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1m  # module.azuread-remove-password["2"].azuread_application.application[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application" "application" {
+      [31m-[0m[0m app_role_ids                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m client_id                      = "2a5c7eb4-ba92-4b94-a3f4-9ac40016416c" [90m-> null[0m[0m
+      [31m-[0m[0m device_only_auth_enabled       = false [90m-> null[0m[0m
+      [31m-[0m[0m display_name                   = "sp-2" [90m-> null[0m[0m
+      [31m-[0m[0m fallback_public_client_enabled = false [90m-> null[0m[0m
+      [31m-[0m[0m group_membership_claims        = [] [90m-> null[0m[0m
+      [31m-[0m[0m id                             = "/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uris                = [
+          [31m-[0m[0m "api://2a5c7eb4-ba92-4b94-a3f4-9ac40016416c",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids    = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_post_response_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m object_id                      = "6b4118e3-dceb-44b7-a952-f6aaba92e3bf" [90m-> null[0m[0m
+      [31m-[0m[0m owners                         = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m prevent_duplicate_names        = false [90m-> null[0m[0m
+      [31m-[0m[0m publisher_domain               = "TomTomInternational.onmicrosoft.com" [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience               = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                           = [] [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m api {
+          [31m-[0m[0m known_client_applications      = [] [90m-> null[0m[0m
+          [31m-[0m[0m mapped_claims_enabled          = false [90m-> null[0m[0m
+          [31m-[0m[0m requested_access_token_version = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m optional_claims {
+        }
+
+      [31m-[0m[0m public_client {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m single_page_application {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m web {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m implicit_grant {
+              [31m-[0m[0m access_token_issuance_enabled = false [90m-> null[0m[0m
+              [31m-[0m[0m id_token_issuance_enabled     = false [90m-> null[0m[0m
+            }
+        }
+    }
+
+[1m  # module.azuread-remove-password["2"].azuread_application_identifier_uri.application_client_id[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_identifier_uri" "application_client_id" {
+      [31m-[0m[0m application_id = "/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf/identifierUris/YXBpOi8vMmE1YzdlYjQtYmE5Mi00Yjk0LWEzZjQtOWFjNDAwMTY0MTZj" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uri = "api://2a5c7eb4-ba92-4b94-a3f4-9ac40016416c" [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["2"].azuread_application_password.application_password[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_password" "application_password" {
+      [31m-[0m[0m application_id = "/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf" [90m-> null[0m[0m
+      [31m-[0m[0m display_name   = "remove-me" [90m-> null[0m[0m
+      [31m-[0m[0m end_date       = "2026-11-29T20:16:07.3690267Z" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "6b4118e3-dceb-44b7-a952-f6aaba92e3bf/password/7dcf0c91-e90d-47b1-be96-c2ee705fe367" [90m-> null[0m[0m
+      [31m-[0m[0m key_id         = "7dcf0c91-e90d-47b1-be96-c2ee705fe367" [90m-> null[0m[0m
+      [31m-[0m[0m start_date     = "2024-11-29T20:16:07.3690267Z" [90m-> null[0m[0m
+      [31m-[0m[0m value          = (sensitive value) [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["2"].azuread_service_principal.service_principal[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_service_principal" "service_principal" {
+      [31m-[0m[0m account_enabled               = true [90m-> null[0m[0m
+      [31m-[0m[0m alternative_names             = [] [90m-> null[0m[0m
+      [31m-[0m[0m app_role_assignment_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m app_role_ids                  = {} [90m-> null[0m[0m
+      [31m-[0m[0m app_roles                     = [] [90m-> null[0m[0m
+      [31m-[0m[0m application_tenant_id         = "2c5da40f-18fe-46b2-80be-9f7bf1ac5fb6" [90m-> null[0m[0m
+      [31m-[0m[0m client_id                     = "2a5c7eb4-ba92-4b94-a3f4-9ac40016416c" [90m-> null[0m[0m
+      [31m-[0m[0m display_name                  = "sp-2" [90m-> null[0m[0m
+      [31m-[0m[0m id                            = "/servicePrincipals/5ccf5dbd-05d2-48ed-93d5-14049292aede" [90m-> null[0m[0m
+      [31m-[0m[0m notification_email_addresses  = [] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids   = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scopes      = [] [90m-> null[0m[0m
+      [31m-[0m[0m object_id                     = "5ccf5dbd-05d2-48ed-93d5-14049292aede" [90m-> null[0m[0m
+      [31m-[0m[0m owners                        = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m redirect_uris                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m service_principal_names       = [
+          [31m-[0m[0m "api://2a5c7eb4-ba92-4b94-a3f4-9ac40016416c",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience              = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                          = [
+          [31m-[0m[0m "HideApp",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m type                          = "Application" [90m-> null[0m[0m
+        [90m# (7 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = true [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m features {
+          [31m-[0m[0m custom_single_sign_on_app = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise_application    = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery_application       = false [90m-> null[0m[0m
+          [31m-[0m[0m visible_to_users          = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m saml_single_sign_on {
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1m  # module.azuread-remove-password["3"].azuread_application.application[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application" "application" {
+      [31m-[0m[0m app_role_ids                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m client_id                      = "390bd51d-c8f7-4f4b-b5f9-0e6e700c7caf" [90m-> null[0m[0m
+      [31m-[0m[0m device_only_auth_enabled       = false [90m-> null[0m[0m
+      [31m-[0m[0m display_name                   = "sp-3" [90m-> null[0m[0m
+      [31m-[0m[0m fallback_public_client_enabled = false [90m-> null[0m[0m
+      [31m-[0m[0m group_membership_claims        = [] [90m-> null[0m[0m
+      [31m-[0m[0m id                             = "/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uris                = [
+          [31m-[0m[0m "api://390bd51d-c8f7-4f4b-b5f9-0e6e700c7caf",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids    = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_post_response_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m object_id                      = "1a02d9b7-2a71-4a78-954d-d3a46b09bc6b" [90m-> null[0m[0m
+      [31m-[0m[0m owners                         = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m prevent_duplicate_names        = false [90m-> null[0m[0m
+      [31m-[0m[0m publisher_domain               = "TomTomInternational.onmicrosoft.com" [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience               = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                           = [] [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m api {
+          [31m-[0m[0m known_client_applications      = [] [90m-> null[0m[0m
+          [31m-[0m[0m mapped_claims_enabled          = false [90m-> null[0m[0m
+          [31m-[0m[0m requested_access_token_version = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m optional_claims {
+        }
+
+      [31m-[0m[0m public_client {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m single_page_application {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m web {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m implicit_grant {
+              [31m-[0m[0m access_token_issuance_enabled = false [90m-> null[0m[0m
+              [31m-[0m[0m id_token_issuance_enabled     = false [90m-> null[0m[0m
+            }
+        }
+    }
+
+[1m  # module.azuread-remove-password["3"].azuread_application_identifier_uri.application_client_id[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_identifier_uri" "application_client_id" {
+      [31m-[0m[0m application_id = "/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/identifierUris/YXBpOi8vMzkwYmQ1MWQtYzhmNy00ZjRiLWI1ZjktMGU2ZTcwMGM3Y2Fm" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uri = "api://390bd51d-c8f7-4f4b-b5f9-0e6e700c7caf" [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["3"].azuread_application_password.application_password[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_password" "application_password" {
+      [31m-[0m[0m application_id = "/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b" [90m-> null[0m[0m
+      [31m-[0m[0m display_name   = "remove-me" [90m-> null[0m[0m
+      [31m-[0m[0m end_date       = "2026-11-29T20:16:07.0498154Z" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/password/504ba32d-4b32-4945-95a7-d2a12399027a" [90m-> null[0m[0m
+      [31m-[0m[0m key_id         = "504ba32d-4b32-4945-95a7-d2a12399027a" [90m-> null[0m[0m
+      [31m-[0m[0m start_date     = "2024-11-29T20:16:07.0498154Z" [90m-> null[0m[0m
+      [31m-[0m[0m value          = (sensitive value) [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["3"].azuread_service_principal.service_principal[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_service_principal" "service_principal" {
+      [31m-[0m[0m account_enabled               = true [90m-> null[0m[0m
+      [31m-[0m[0m alternative_names             = [] [90m-> null[0m[0m
+      [31m-[0m[0m app_role_assignment_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m app_role_ids                  = {} [90m-> null[0m[0m
+      [31m-[0m[0m app_roles                     = [] [90m-> null[0m[0m
+      [31m-[0m[0m application_tenant_id         = "2c5da40f-18fe-46b2-80be-9f7bf1ac5fb6" [90m-> null[0m[0m
+      [31m-[0m[0m client_id                     = "390bd51d-c8f7-4f4b-b5f9-0e6e700c7caf" [90m-> null[0m[0m
+      [31m-[0m[0m display_name                  = "sp-3" [90m-> null[0m[0m
+      [31m-[0m[0m id                            = "/servicePrincipals/4057dd16-19ed-46d9-aea7-20f4250b560c" [90m-> null[0m[0m
+      [31m-[0m[0m notification_email_addresses  = [] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids   = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scopes      = [] [90m-> null[0m[0m
+      [31m-[0m[0m object_id                     = "4057dd16-19ed-46d9-aea7-20f4250b560c" [90m-> null[0m[0m
+      [31m-[0m[0m owners                        = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m redirect_uris                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m service_principal_names       = [
+          [31m-[0m[0m "api://390bd51d-c8f7-4f4b-b5f9-0e6e700c7caf",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience              = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                          = [
+          [31m-[0m[0m "HideApp",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m type                          = "Application" [90m-> null[0m[0m
+        [90m# (7 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = true [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m features {
+          [31m-[0m[0m custom_single_sign_on_app = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise_application    = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery_application       = false [90m-> null[0m[0m
+          [31m-[0m[0m visible_to_users          = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m saml_single_sign_on {
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1m  # module.azuread-remove-password["4"].azuread_application.application[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application" "application" {
+      [31m-[0m[0m app_role_ids                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m client_id                      = "701ace97-2dfe-4e10-9714-82576621b7a8" [90m-> null[0m[0m
+      [31m-[0m[0m device_only_auth_enabled       = false [90m-> null[0m[0m
+      [31m-[0m[0m display_name                   = "sp-4" [90m-> null[0m[0m
+      [31m-[0m[0m fallback_public_client_enabled = false [90m-> null[0m[0m
+      [31m-[0m[0m group_membership_claims        = [] [90m-> null[0m[0m
+      [31m-[0m[0m id                             = "/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uris                = [
+          [31m-[0m[0m "api://701ace97-2dfe-4e10-9714-82576621b7a8",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids    = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_post_response_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m object_id                      = "4bbad115-6561-44e9-a2c6-ff6b23ee9902" [90m-> null[0m[0m
+      [31m-[0m[0m owners                         = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m prevent_duplicate_names        = false [90m-> null[0m[0m
+      [31m-[0m[0m publisher_domain               = "TomTomInternational.onmicrosoft.com" [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience               = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                           = [] [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m api {
+          [31m-[0m[0m known_client_applications      = [] [90m-> null[0m[0m
+          [31m-[0m[0m mapped_claims_enabled          = false [90m-> null[0m[0m
+          [31m-[0m[0m requested_access_token_version = 1 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m optional_claims {
+        }
+
+      [31m-[0m[0m public_client {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m single_page_application {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m web {
+          [31m-[0m[0m redirect_uris = [] [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+
+          [31m-[0m[0m implicit_grant {
+              [31m-[0m[0m access_token_issuance_enabled = false [90m-> null[0m[0m
+              [31m-[0m[0m id_token_issuance_enabled     = false [90m-> null[0m[0m
+            }
+        }
+    }
+
+[1m  # module.azuread-remove-password["4"].azuread_application_identifier_uri.application_client_id[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_identifier_uri" "application_client_id" {
+      [31m-[0m[0m application_id = "/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902/identifierUris/YXBpOi8vNzAxYWNlOTctMmRmZS00ZTEwLTk3MTQtODI1NzY2MjFiN2E4" [90m-> null[0m[0m
+      [31m-[0m[0m identifier_uri = "api://701ace97-2dfe-4e10-9714-82576621b7a8" [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["4"].azuread_application_password.application_password[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_application_password" "application_password" {
+      [31m-[0m[0m application_id = "/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902" [90m-> null[0m[0m
+      [31m-[0m[0m display_name   = "remove-me" [90m-> null[0m[0m
+      [31m-[0m[0m end_date       = "2026-11-29T20:16:07.6412548Z" [90m-> null[0m[0m
+      [31m-[0m[0m id             = "4bbad115-6561-44e9-a2c6-ff6b23ee9902/password/93bc9615-11ea-4dfc-868f-8da81644e3f9" [90m-> null[0m[0m
+      [31m-[0m[0m key_id         = "93bc9615-11ea-4dfc-868f-8da81644e3f9" [90m-> null[0m[0m
+      [31m-[0m[0m start_date     = "2024-11-29T20:16:07.6412548Z" [90m-> null[0m[0m
+      [31m-[0m[0m value          = (sensitive value) [90m-> null[0m[0m
+    }
+
+[1m  # module.azuread-remove-password["4"].azuread_service_principal.service_principal[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "azuread_service_principal" "service_principal" {
+      [31m-[0m[0m account_enabled               = true [90m-> null[0m[0m
+      [31m-[0m[0m alternative_names             = [] [90m-> null[0m[0m
+      [31m-[0m[0m app_role_assignment_required  = false [90m-> null[0m[0m
+      [31m-[0m[0m app_role_ids                  = {} [90m-> null[0m[0m
+      [31m-[0m[0m app_roles                     = [] [90m-> null[0m[0m
+      [31m-[0m[0m application_tenant_id         = "2c5da40f-18fe-46b2-80be-9f7bf1ac5fb6" [90m-> null[0m[0m
+      [31m-[0m[0m client_id                     = "701ace97-2dfe-4e10-9714-82576621b7a8" [90m-> null[0m[0m
+      [31m-[0m[0m display_name                  = "sp-4" [90m-> null[0m[0m
+      [31m-[0m[0m id                            = "/servicePrincipals/596b58b7-55d0-4252-b616-da5ff79b4fe9" [90m-> null[0m[0m
+      [31m-[0m[0m notification_email_addresses  = [] [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scope_ids   = {} [90m-> null[0m[0m
+      [31m-[0m[0m oauth2_permission_scopes      = [] [90m-> null[0m[0m
+      [31m-[0m[0m object_id                     = "596b58b7-55d0-4252-b616-da5ff79b4fe9" [90m-> null[0m[0m
+      [31m-[0m[0m owners                        = [
+          [31m-[0m[0m "0eca5427-e473-4a4a-84f4-16ad0fc5b437",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m redirect_uris                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m service_principal_names       = [
+          [31m-[0m[0m "api://701ace97-2dfe-4e10-9714-82576621b7a8",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m sign_in_audience              = "AzureADMyOrg" [90m-> null[0m[0m
+      [31m-[0m[0m tags                          = [
+          [31m-[0m[0m "HideApp",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m type                          = "Application" [90m-> null[0m[0m
+        [90m# (7 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m feature_tags {
+          [31m-[0m[0m custom_single_sign_on = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise            = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery               = false [90m-> null[0m[0m
+          [31m-[0m[0m hide                  = true [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m features {
+          [31m-[0m[0m custom_single_sign_on_app = false [90m-> null[0m[0m
+          [31m-[0m[0m enterprise_application    = false [90m-> null[0m[0m
+          [31m-[0m[0m gallery_application       = false [90m-> null[0m[0m
+          [31m-[0m[0m visible_to_users          = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m saml_single_sign_on {
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 16 to destroy.
+[0m[0m[1mmodule.azuread-remove-password["4"].azuread_application_password.application_password: Destroying... [id=4bbad115-6561-44e9-a2c6-ff6b23ee9902/password/93bc9615-11ea-4dfc-868f-8da81644e3f9][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_password.application_password: Destroying... [id=1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/password/504ba32d-4b32-4945-95a7-d2a12399027a][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id: Destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/identifierUris/YXBpOi8vNWY4NTBhMTktM2IxMS00YmY1LTllZWMtNzNjYWQ3OGIzNjhi][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_identifier_uri.application_client_id: Destroying... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/identifierUris/YXBpOi8vMzkwYmQ1MWQtYzhmNy00ZjRiLWI1ZjktMGU2ZTcwMGM3Y2Fm][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_password.application_password: Destroying... [id=6b4118e3-dceb-44b7-a952-f6aaba92e3bf/password/7dcf0c91-e90d-47b1-be96-c2ee705fe367][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_password.application_password: Destroying... [id=8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/password/c276def6-5a0e-485c-82ed-57c18828f131][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_identifier_uri.application_client_id: Destroying... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf/identifierUris/YXBpOi8vMmE1YzdlYjQtYmE5Mi00Yjk0LWEzZjQtOWFjNDAwMTY0MTZj][0m[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_application_identifier_uri.application_client_id: Destroying... [id=/applications/4bbad115-6561-44e9-a2c6-ff6b23ee9902/identifierUris/YXBpOi8vNzAxYWNlOTctMmRmZS00ZTEwLTk3MTQtODI1NzY2MjFiN2E4][0m[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_service_principal.service_principal: Destroying... [id=/servicePrincipals/596b58b7-55d0-4252-b616-da5ff79b4fe9][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_service_principal.service_principal: Destroying... [id=/servicePrincipals/4057dd16-19ed-46d9-aea7-20f4250b560c][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_service_principal.service_principal: Destroying... [id=/servicePrincipals/5ccf5dbd-05d2-48ed-93d5-14049292aede][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_identifier_uri.application_client_id: Destruction complete after 1s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_service_principal.service_principal: Destroying... [id=/servicePrincipals/0ff6ec2d-ee55-44fc-b0d7-5433b5310a04][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_identifier_uri.application_client_id: Destruction complete after 1s[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_application_identifier_uri.application_client_id: Destruction complete after 1s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_password.application_password: Still destroying... [id=8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/pa...d/c276def6-5a0e-485c-82ed-57c18828f131, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_password.application_password: Still destroying... [id=6b4118e3-dceb-44b7-a952-f6aaba92e3bf/pa...d/7dcf0c91-e90d-47b1-be96-c2ee705fe367, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id: Still destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3...ktM2IxMS00YmY1LTllZWMtNzNjYWQ3OGIzNjhi, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/4057dd16-19ed-46d9-aea7-20f4250b560c, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/596b58b7-55d0-4252-b616-da5ff79b4fe9, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_password.application_password: Still destroying... [id=1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/pa...d/504ba32d-4b32-4945-95a7-d2a12399027a, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/5ccf5dbd-05d2-48ed-93d5-14049292aede, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/0ff6ec2d-ee55-44fc-b0d7-5433b5310a04, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id: Still destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3...ktM2IxMS00YmY1LTllZWMtNzNjYWQ3OGIzNjhi, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_password.application_password: Still destroying... [id=1a02d9b7-2a71-4a78-954d-d3a46b09bc6b/pa...d/504ba32d-4b32-4945-95a7-d2a12399027a, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/4057dd16-19ed-46d9-aea7-20f4250b560c, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/596b58b7-55d0-4252-b616-da5ff79b4fe9, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_password.application_password: Still destroying... [id=8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd/pa...d/c276def6-5a0e-485c-82ed-57c18828f131, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_password.application_password: Still destroying... [id=6b4118e3-dceb-44b7-a952-f6aaba92e3bf/pa...d/7dcf0c91-e90d-47b1-be96-c2ee705fe367, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/5ccf5dbd-05d2-48ed-93d5-14049292aede, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_service_principal.service_principal: Still destroying... [id=/servicePrincipals/0ff6ec2d-ee55-44fc-b0d7-5433b5310a04, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_service_principal.service_principal: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_password.application_password: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["4"].azuread_service_principal.service_principal: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_service_principal.service_principal: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_service_principal.service_principal: Destruction complete after 20s[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application_password.application_password: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application.application: Destroying... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application_password.application_password: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application.application: Destroying... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application_identifier_uri.application_client_id: Destruction complete after 22s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application.application: Destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application.application: Still destroying... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application.application: Still destroying... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application.application: Still destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd, 10s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application.application: Still destroying... [id=/applications/1a02d9b7-2a71-4a78-954d-d3a46b09bc6b, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application.application: Still destroying... [id=/applications/6b4118e3-dceb-44b7-a952-f6aaba92e3bf, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application.application: Still destroying... [id=/applications/8c0cf59e-66d2-43dd-b21d-3ebc0e3cf4dd, 20s elapsed][0m[0m
+[0m[1mmodule.azuread-remove-password["3"].azuread_application.application: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["2"].azuread_application.application: Destruction complete after 21s[0m
+[0m[1mmodule.azuread-remove-password["1"].azuread_application.application: Destruction complete after 21s[0m
+╷
+│ Error: Removing password credential "93bc9615-11ea-4dfc-868f-8da81644e3f9" from Application (Application: "4bbad115-6561-44e9-a2c6-ff6b23ee9902")
+│ 
+│ unexpected status 404 (404 Not Found) with error: Directory_ObjectNotFound: Unable to read the company information from the directory.
+╵
